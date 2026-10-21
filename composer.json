@@ -1,0 +1,49 @@
+{
+    "name": "anun333/oe-module-units-check",
+    "description": "See what an OpenEMR site keeps as units in UCUM terms, the unit codes FHIR, C-CDA, eCQMs and HL7 v2 exchange, and add UCUM codes to its unit list options",
+    "type": "openemr-module",
+    "license": "GPL-3.0-or-later",
+    "keywords": [
+        "openemr",
+        "openemr-module",
+        "ucum",
+        "units",
+        "fhir",
+        "interoperability"
+    ],
+    "authors": [
+        {
+            "name": "anun333",
+            "email": "anun333@posteo.net"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "openemr/oe-module-installer-plugin": "^0.1.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenHealthcare\\UnitsCheck\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OpenHealthcare\\UnitsCheck\\Tests\\": "tests/"
+        },
+        "files": [
+            "tests/stubs.php"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "openemr/oe-module-installer-plugin": true
+        }
+    },
+    "support": {
+        "issues": "https://github.com/anun333/oe-module-units-check/issues",
+        "source": "https://github.com/anun333/oe-module-units-check"
+    }
+}
