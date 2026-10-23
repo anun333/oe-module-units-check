@@ -64,7 +64,7 @@ Not yet run on 7.0.x. PHP 8.2 to 8.5.
 composer require anun333/oe-module-units-check
 ```
 
-Then enable it under **Modules › Manage Modules**. Or copy this directory to `interface/modules/custom_modules/oe-module-units-check/` and register it there.
+Then enable it under **Modules › Manage Modules**. It brings [openhealthcare-common](https://github.com/anun333/openhealthcare-common), the small library of OpenEMR compatibility code the openhealthcare modules share; Composer installs it alongside. Or copy this directory to `interface/modules/custom_modules/oe-module-units-check/`, run `composer install --no-dev` in it to fetch that library, and register it there; without the library the module stays off.
 
 ## Development
 
