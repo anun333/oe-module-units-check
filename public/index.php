@@ -93,7 +93,8 @@ $token = OpenEmr::csrfToken();
 $t = $report['totals'];
 ?>
 <!DOCTYPE html>
-<html>
+<?php // The module's own text is written in English. ?>
+<html lang="en">
 <head>
     <title><?php echo xlt('Units Check'); ?></title>
     <?php Header::setupHeader(); ?>
@@ -103,6 +104,8 @@ $t = $report['totals'];
         .uc-inline { display: inline-flex; gap: .25rem; align-items: center; }
         .uc-inline input { width: 9rem; }
     </style>
+    <style>/* Bootstrap's code colour is 3.7:1 on these backgrounds; this one is over 5.6:1 (WCAG 1.4.3). */ code { color: #b5175b; }</style>
+    <style>/* Links in running text are underlined, not told apart by colour alone (WCAG 1.4.1). */ p a, li a { text-decoration: underline; }</style>
 </head>
 <body class="body_top">
 <div class="container-fluid py-3">
