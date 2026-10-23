@@ -50,6 +50,8 @@ The page, the JSON and every change need `admin/super`, the check OpenEMR's own 
 
 ## Compatibility
 
+**PHP security.** PHP's php2shell advisory (2026-10-21; CVE-2026-109618 and CVE-2026-109619) is remote code execution without logging in, and it is being exploited. Run OpenEMR on PHP 8.2.35, 8.3.36, 8.4.27, 8.5.12 or later, whatever the module needs. The official OpenEMR 7.0.2 and 7.0.3 Docker images can't get that fix: they carry PHP 8.2.16 and 8.3.15 on Alpine releases that no longer get updates. Run 7.0 only on a patched PHP, or upgrade OpenEMR. OpenEMR rebuilt its 8.4.1, 8.3.0, 8.2.0 and 8.0.0.3 images with the fix on 2026-10-22 (forum t/27157); a container started before then needs pulling again.
+
 Written for OpenEMR 7.0 and later through the same compatibility layer as Layout Export (settings, session, CSRF, access denied and the audit log changed between releases). Checked end to end with synthetic data (24 checks: the page, who may open it, each synthetic value read as predicted, setting codes, add-all, the JSON, the audit log, and `list_options` restored to its checksum afterwards) on:
 
 - OpenEMR 8.4.1 (no engine: the module's tables);
