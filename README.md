@@ -58,7 +58,7 @@ Written for OpenEMR 7.0 and later through the same compatibility layer as Layout
 - 8.5.0-dev at 61b4a46a4a (the engine);
 - the #14698 reference branch at b9eb0cf88e (core's layer).
 
-Not yet run on 7.0.x. PHP 8.2 to 8.5.
+On fresh official 7.0.2, 7.0.3, 8.1.0, 8.3.0 and 8.5.0 images (2026-10-23) it installs through Module Manager and its page loads, with every module enabled and with it alone (`dev/module_compat_check.sh`). PHP 8.2 to 8.5.
 
 ## Install
 
