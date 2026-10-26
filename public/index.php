@@ -93,8 +93,8 @@ $token = OpenEmr::csrfToken();
 $t = $report['totals'];
 ?>
 <!DOCTYPE html>
-<?php // The module's own text is written in English. ?>
-<html lang="en">
+<?php // The page is in the signed-in user's OpenEMR language, so translated text is announced in it. ?>
+<html lang="<?php echo attr(OpenEmr::pageLang()); ?>" dir="<?php echo attr(OpenEmr::pageDir()); ?>">
 <head>
     <title><?php echo xlt('Units Check'); ?></title>
     <?php Header::setupHeader(); ?>
