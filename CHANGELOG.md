@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.4 (unreleased)
+## 0.1.4 (2026-10-26)
 
 - **The README says why bare `units` stays unmapped:** it could be `U` or `[IU]`, so it is listed with no UCUM code and goes out as text, rather than guessed.
 
