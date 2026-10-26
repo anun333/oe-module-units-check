@@ -53,9 +53,7 @@ As written in the source; whether they behave correctly for a given user is not 
 ## Settings it reads
 
 - `OE_SITE_DIR` (`vendor/anun333/openhealthcare-common/src/OpenEmr.php`)
-- `fileroot` (`vendor/anun333/openhealthcare-common/src/OpenEmr.php`)
 - `openemr_version` (`vendor/anun333/openhealthcare-common/src/OpenEmr.php`)
-- `webroot` (`vendor/anun333/openhealthcare-common/src/OpenEmr.php`)
 
 ## Files it writes
 
@@ -76,7 +74,7 @@ As written in the source; whether they behave correctly for a given user is not 
 | PHP logic (`src/`) | 8 | 875 |
 | tests (`tests/`, `phpunit.xml.dist`) | 5 | 287 |
 | pages (`public/`) | 1 | 192 |
-| module wiring | 5 | 166 |
+| module wiring | 5 | 167 |
 | tools (`tools/`) | 2 | 127 |
 
 ## Not covered here
