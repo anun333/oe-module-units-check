@@ -44,6 +44,8 @@ The same way the shared unit layer proposed for core does, with the same table o
 
 The rules: a bare number is never a unit; a spelling with no lower-case letter outside brackets is not trusted as written but looked up (`MG/DL` is `mg/dL`, `PG` is `pg`); and `K/uL` reads as thousands per microlitre, not kelvin.
 
+The bare word `units` (as insulin and heparin doses are often written) is left unmapped on purpose: it could mean the enzyme unit `U` or an international unit `[IU]`, so the page lists it as having no UCUM code, and it goes out as text, rather than guess. The letter `u` alone is read as `U`, as in the shared table.
+
 ## Who can open it
 
 The page, the JSON and every change need `admin/super`, the check OpenEMR's own list editor makes. Writes need the page's CSRF token.
