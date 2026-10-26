@@ -98,6 +98,7 @@ $t = $report['totals'];
 <head>
     <title><?php echo xlt('Units Check'); ?></title>
     <?php Header::setupHeader(); ?>
+    <?php echo \OpenHealthcare\UnitsCheck\Contrast::style(); ?>
     <style>
         .uc-table td, .uc-table th { font-size: .85rem; vertical-align: middle; }
         .uc-code { font-family: monospace; }
