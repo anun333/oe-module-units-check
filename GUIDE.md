@@ -35,3 +35,7 @@ Choose **Download this report as JSON**. It holds unit strings and row counts on
 ## Who can use it
 
 The page, the download and every change need an administrator (`admin/super` in OpenEMR's access control), the check OpenEMR's own list editor makes.
+
+## Help
+
+**Help** on the module's page opens this guide for the version you have installed.

@@ -72,6 +72,8 @@ composer require anun333/oe-module-units-check
 
 Then enable it under **Modules › Manage Modules**. It brings [openhealthcare-common](https://github.com/anun333/openhealthcare-common), the small library of OpenEMR compatibility code the openhealthcare modules share; Composer installs it alongside. Or copy this directory to `interface/modules/custom_modules/oe-module-units-check/`, run `composer install --no-dev` in it to fetch that library, and register it there; without the library the module stays off.
 
+**After adding, upgrading or removing a module copied in by hand, restart the container (or Apache).** OpenEMR's official Docker images (8.0.0 to 8.5.0) keep in APCu which file holds each class, and each class they didn't find, across requests: until a restart, a class once not found stays not found, and a removed module's classes still point at its folder. An OpenEMR built from source without Composer's `--apcu-autoloader` has no such cache.
+
 ## Development
 
 ```

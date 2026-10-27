@@ -111,6 +111,7 @@ $t = $report['totals'];
 <body class="body_top">
 <div class="container-fluid py-3">
     <h1 class="h4"><?php echo xlt('Units Check'); ?></h1>
+    <p class="small"><a href="<?php echo attr(\OpenHealthcare\UnitsCheck\Guide::url()); ?>" target="_blank" rel="noopener"><?php echo xlt('Help'); ?></a></p>
     <p class="small text-muted"><?php echo xlt('What this site keeps as units, in UCUM: the unit codes FHIR, C-CDA, eCQMs and HL7 v2 exchange. For each unit list option and each value the unit fields hold, the UCUM code an export sends, or why it goes out as text only.'); ?>
         <?php echo text($sourceText[$report['source']] ?? ''); ?></p>
     <?php foreach ($messages as [$kind, $text]) { ?><div class="alert alert-<?php echo attr($kind); ?> py-1 small"><?php echo text($text); ?></div><?php } ?>
