@@ -4,7 +4,7 @@ Shows what an OpenEMR site keeps as units in UCUM terms, and lets an administrat
 
 UCUM (the Unified Code for Units of Measure) is how units are exchanged: FHIR quantities, C-CDA physical quantities, eCQM calculations and HL7 v2 unit fields all use its codes. OpenEMR stores units as list option ids, list titles and free text (`mcg`, `MG/DL`, `9`), and its exporters have labelled those as UCUM without checking them. OpenEMR's plan to make UCUM its one unit vocabulary is [openemr/openemr#14698](https://github.com/openemr/openemr/issues/14698). This module lets a site see where it stands before and after that change, and fix the part that is its own: the options it added or renamed in its unit lists.
 
-> **Status: 0.1.5, a pre-release.** Tested with synthetic data on OpenEMR 8.4.1, on 8.5.0-dev (master, which has core's UCUM engine) and on the UCUM reference branch for #14698 (see [Compatibility](#compatibility)). The only thing it changes is a unit list option's codes field, when an administrator asks it to.
+> **Status: 0.1.6, a pre-release.** Tested with synthetic data on OpenEMR 8.4.1, on 8.5.0-dev (master, which has core's UCUM engine) and on the UCUM reference branch for #14698 (see [Compatibility](#compatibility)). The only thing it changes is a unit list option's codes field, when an administrator asks it to.
 
 What installing it changes in your database (nothing), what it reads and writes, and what it hooks into are listed in [FOOTPRINT.md](FOOTPRINT.md), generated from the source.
 

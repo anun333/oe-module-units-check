@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.6 (unreleased)
+## 0.1.6 (2026-10-26)
 
 - **A staff guide**, GUIDE.md (see units without a UCUM code, set one, share the report), opened by **Help** on the page at the installed version's tag, with a test that every label it quotes is on the page.
 - **Install note:** restart the container after adding, upgrading or removing a module copied in by hand (OpenEMR's official 8.0.0 to 8.5.0 images keep class locations, and classes not found, in APCu).
